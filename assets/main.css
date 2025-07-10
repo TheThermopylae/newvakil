@@ -1,1 +1,91 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "YekanBakhFaNum-Regular";
+    src: url('/public/fonts/woff/YekanBakhFaNum-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "YekanBakhFaNum-Bold";
+    src: url('/public/fonts/woff/YekanBakhFaNum-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "YekanBakhFaNum-ExtraBold";
+    src: url('/public/fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
+}
+
+@theme {
+    --font-sans: "YekanBakhFaNum-Regular";
+    --font-yekB: "YekanBakhFaNum-Bold";
+    --font-yekEB: "YekanBakhFaNum-ExtraBold";
+    /* colors */
+    --color-primary: #3738FE;
+    --color-main: #F7F7F7;
+    --color-secondary-text: #707070;
+    --color-maincomp: #eee;
+    --color-notactive: #E1E1F1;
+    --color-field: #CCE4FF;
+
+    --text-2sm: 10px;
+
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-15: 15px;
+}
+
+body {
+    /* @apply bg-main */
+}
+
+@utility container {
+    margin: auto;
+    padding-inline: 1rem;
+
+    @variant sm {
+        padding-inline: 2rem;
+    }
+
+    @variant lg {
+        padding-inline: 4rem;
+    }
+
+    @variant xl {
+        padding-inline: 5rem;
+    }
+
+    @variant 2xl {
+        padding-inline: 6rem;
+    }
+}
+
+* {
+    outline: none;
+}
+
+.primary {
+    @apply bg-primary text-white
+}
+
+.heading-gradiant {
+    @apply font-yekB bg-gradient-to-t from-white to-[#E6E6E6] bg-clip-text text-transparent tracking-tighter
+}
+
+.flex-center {
+    @apply flex justify-center items-center
+}
+
+button {
+    @apply cursor-pointer
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}

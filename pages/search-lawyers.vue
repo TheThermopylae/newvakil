@@ -1,13 +1,13 @@
 <template>
   <main class="container">
     <SearchLawyerTheBanner />
-    <div class="flex justify-between gap-5">
-      <div class="w-1/4">
+    <div class="xl:flex justify-between gap-5">
+      <div class="xl:w-1/4">
         <SearchLawyerDetails :lawyer="selectedLawyer" />
         <SearchLawyerCommentsSection />
       </div>
-      <div class="w-3/4">
-        <SearchLawyerFilterSection />
+      <div class="xl:w-3/4">
+        <!-- <SearchLawyerFilterSection /> -->
         <SearchLawyerCard
           v-for="item in lawyers"
           :key="item.name"

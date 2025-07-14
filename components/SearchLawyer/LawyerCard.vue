@@ -6,13 +6,15 @@
       'shadow-[0_4px_4px_0_#00000004]':
         props.selectedLawyer.id !== props.data.id
     }"
-    class="flex justify-between items-center mb-3 gap-5 cursor-pointer bg-white rounded-10 p-3 transition-all relative"
+    class="lg:flex justify-between items-center mb-3 gap-5 cursor-pointer bg-white rounded-10 p-3 transition-all relative"
   >
-    <div class="flex gap-3 w-2/3">
+    <div
+      class="flex flex-col lg:flex-row gap-3 items-center lg:items-start text-center lg:text-right w2/3"
+    >
       <img :src="props.data.img" alt="" class="w-[147px] h-[147px]" />
       <div>
         <h4 class="font-yekB">{{ props.data.name }}</h4>
-        <div class="my-3 flex gap-2">
+        <div class="my-3 grid grid-cols-2 lg:flex flex-row gap-2">
           <div class="bg-maincomp p-2.5 rounded-5 flex items-center gap-2">
             <svg
               width="15"
@@ -95,7 +97,7 @@
         <p class="text-xs">
           {{ props.data.des }}
         </p>
-        <div class="flex gap-2 mt-3 absolute bottom-3">
+        <div class="flex gap-2 mt-3 lg:absolute bottom-3">
           <span
             class="rounded bg-[#9293FF]/15 p-1.5 text-2sm"
             v-for="item in props.data.specialties"
@@ -105,7 +107,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="mt-2 lg:mt-0">
       <NuxtLink
         to="/"
         class="flex gap-2.5 px-2.5 py-3 rounded-5 justify-center border border-primary transition-all"
@@ -167,10 +169,10 @@
           />
         </svg>
       </div>
-      <div class="flex justify-between">
+      <div class="flex justify-between gap-2">
         <NuxtLink
           to="/"
-          class="p-2.5 flex gap-2.5 items-center rounded-5"
+          class="p-2.5 flex gap-2.5 items-center rounded-5 flex-grow lg:flex-grow-0"
           :class="{
             primary: props.selectedLawyer.id == props.data.id,
             'bg-primary/10 text-black':

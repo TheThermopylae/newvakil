@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-main p-4 rounded-2xl flex justify-between items-center mb-4">
+  <section
+    class="bg-main p-4 rounded-2xl md:flex justify-between items-center mb-4"
+  >
     <div class="flex gap-3 items-center">
       <img
         src="/searchlawyer/law1.svg"
@@ -11,7 +13,7 @@
         <p class="text-secondary-text text-sm">soheilrezaie@gmail.com</p>
       </div>
     </div>
-    <div class="flex gap-3">
+    <div class="flex gap-3 mt-3">
       <NuxtLink to="/" class="size-[52px] rounded-full flex-center bg-white"
         ><svg
           width="24"
@@ -34,10 +36,14 @@
           />
         </svg>
       </NuxtLink>
-      <div class="relative">
-        <input type="text" placeholder="جستجوی پرونده" class="placeholder:text-xs text-xs p-3 pr-10 rounded-full bg-white h-[52px] w-[245px]" />
+      <div class="relative flex-grow">
+        <input
+          type="text"
+          placeholder="جستجوی پرونده"
+          class="placeholder:text-xs text-xs p-3 pr-10 rounded-full bg-white h-[52px] md:w-[245px] w-full"
+        />
         <svg
-        class="absolute top-1/2 -translate-y-1/2 right-3"
+          class="absolute top-1/2 -translate-y-1/2 right-3"
           width="21"
           height="21"
           viewBox="0 0 21 21"

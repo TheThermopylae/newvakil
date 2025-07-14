@@ -1,7 +1,7 @@
 <template>
   <header class="container mt-4 flex justify-between items-center">
     <img src="/logo.svg" alt="logo" />
-    <ul class="flex gap-10">
+    <ul class="hidden gap-10 lg:flex">
       <li>
         <NuxtLink to="/">
           <svg

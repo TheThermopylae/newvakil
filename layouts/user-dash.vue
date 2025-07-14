@@ -1,10 +1,10 @@
 <template>
   <ClientOnly>
-    <div class="container py-3 flex justify-between gap-5">
+    <div class="container py-3 lg:flex justify-between gap-5">
       <UserPanelSideBar />
-      <div class="flex-grow">
+      <div class="lg:w-2/3 xl:w-3/4">
         <UserPanelTheHeader />
-        <div class="bg-main p-3 rounded-2xl">
+        <div class="bg-main p-4 rounded-2xl">
           <slot />
         </div>
       </div>

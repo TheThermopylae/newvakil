@@ -1,22 +1,24 @@
 <template>
   <section
-    class="bg-gradient-to-l from-[#3D3FF0]/15 via-[#FF9114]/15 to-[#943FB3]/15 h-[265px] mt-10 rounded-[10px] flex-center flex-col mb-5"
+    class="px-3 bg-gradient-to-l from-[#3D3FF0]/15 via-[#FF9114]/15 to-[#943FB3]/15 h-[265px] mt-10 rounded-[10px] flex-center flex-col mb-5"
   >
     <h1 class="text-3xl font-yekB">جستجو بین وکلا</h1>
-    <p class="text-[#707070] w-1/3 text-center my-6 text-[10px]">
+    <p class="text-[#707070] lg:w-1/3 text-center my-6 text-[10px]">
       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
       طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
       که لازم است
     </p>
     <div
-      class="flex justify-between items-center bg-[#464646] pl-[7px] py-[7px] pr-[13px] w-[387px] rounded-full"
+      class="flex justify-between items-center bg-[#464646] pl-[7px] py-[7px] pr-[13px] md:w-[387px] rounded-full"
     >
       <input
         type="text"
         placeholder="جستجوی وکیل"
         class="placeholder:text-white placeholder:text-sm text-white"
       />
-      <button class="bg-primary text-white rounded-full p-2.5 flex gap-2.5 cursor-pointer">
+      <button
+        class="bg-primary text-white rounded-full p-2.5 flex gap-2.5 cursor-pointer"
+      >
         <svg
           width="21"
           height="22"

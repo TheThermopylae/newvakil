@@ -15,6 +15,6 @@
 
 <style scoped>
 div {
-  background: radial-gradient(#3738fe, #191962, #111139);
+  background: radial-gradient(#3738fe, #212298);
 }
 </style>

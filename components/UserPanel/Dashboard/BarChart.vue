@@ -1,5 +1,5 @@
 <template>
-  <div class="w-2/3 rounded-[20px] bg-white p-4">
+  <div class="md:w-2/3 rounded-[20px] bg-white p-4 mt-3 md:mt-0 overflow-auto">
     <h4 class="font-yekB mb-3">نمودار درامد</h4>
     <canvas ref="myChart"></canvas>
   </div>

@@ -26,6 +26,7 @@
     --color-maincomp: #eee;
     --color-notactive: #E1E1F1;
     --color-field: #CCE4FF;
+    --color-success : #00AE2B;
 
     --text-2sm: 10px;
 
@@ -88,4 +89,13 @@ input[type='number']::-webkit-inner-spin-button {
 /* Firefox */
 input[type='number'] {
     -moz-appearance: textfield;
+}
+
+/* PrimeVue Theming */
+.p-toast {
+    @apply !w-11/12 !max-w-[350px]
+}
+
+.p-toast-message {
+    box-shadow: none !important;
 }

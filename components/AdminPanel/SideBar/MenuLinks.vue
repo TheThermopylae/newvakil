@@ -2,11 +2,11 @@
   <ul class="mt-2">
     <li class="mb-6">
       <NuxtLink
-        to="/user-dashboard/dashboard"
+        to="/admin-dashboard/dashboard"
         class="flex items-center gap-3 px-6 relative text-secondary-text"
       >
         <div
-          v-show="route.path == '/user-dashboard/dashboard'"
+          v-show="route.path == '/admin-dashboard/dashboard'"
           class="w-1.5 h-10 absolute rounded-l-full bg-primary right-0"
         ></div>
         <svg
@@ -29,11 +29,11 @@
     </li>
     <li class="mb-6">
       <NuxtLink
-        to="/user-dashboard/profile"
+        to="/"
         class="flex items-center gap-3 px-6 relative text-secondary-text"
       >
         <div
-          v-show="route.path == '/user-dashboard/profile'"
+          v-show="route.path == '/'"
           class="w-1.5 h-10 absolute rounded-l-full bg-primary right-0"
         ></div>
         <svg
@@ -57,11 +57,11 @@
     </li>
     <li class="mb-6">
       <NuxtLink
-        to="/user-dashboard/subscribe"
+        to="/"
         class="flex items-center gap-3 px-6 relative text-secondary-text"
       >
         <div
-          v-show="route.path == '/user-dashboard/subscribe'"
+          v-show="route.path == '/'"
           class="w-1.5 h-10 absolute rounded-l-full bg-primary right-0"
         ></div>
         <svg
@@ -98,11 +98,11 @@
     </li>
     <li class="mb-6">
       <NuxtLink
-        to="/user-dashboard/subscribe"
+        to="/"
         class="flex items-center px-6 relative text-secondary-text"
       >
         <div
-          v-show="route.path == '/user-dashboard/subscribe'"
+          v-show="route.path == '/'"
           class="w-1.5 h-10 absolute rounded-l-full bg-primary right-0"
         ></div>
         <div class="flex items-center gap-3">
@@ -132,11 +132,11 @@
     </li>
     <li>
       <NuxtLink
-        to="/user-dashboard/subscribe"
+        to="/"
         class="flex items-center px-6 relative text-secondary-text"
       >
         <div
-          v-show="route.path == '/user-dashboard/subscribe'"
+          v-show="route.path == '/'"
           class="w-1.5 h-10 absolute rounded-l-full bg-primary right-0"
         ></div>
         <div class="flex items-center gap-3">

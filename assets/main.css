@@ -26,17 +26,15 @@
     --color-maincomp: #eee;
     --color-notactive: #E1E1F1;
     --color-field: #CCE4FF;
-    --color-success : #00AE2B;
+    --color-success: #00AE2B;
+    --color-done: #00FF40;
 
     --text-2sm: 10px;
 
     --radius-5: 5px;
     --radius-10: 10px;
     --radius-15: 15px;
-}
-
-body {
-    /* @apply bg-main */
+    --radius-20: 20px;
 }
 
 @utility container {
@@ -74,6 +72,10 @@ body {
 
 .flex-center {
     @apply flex justify-center items-center
+}
+
+.custom-shadow {
+    box-shadow: 0 0 43px 3px #79797921;
 }
 
 button {

@@ -153,11 +153,11 @@
     </ul>
     <div class="flex gap-4 items-center z-10">
       <NuxtLink
-        to="/auth/register"
+        to="/user-dashboard/dashboard"
         class="primary rounded-full px-6 py-3 shadow"
         >شروع کن</NuxtLink
       >
-      <NuxtLink to="/auth/login">ورود</NuxtLink>
+      <NuxtLink to="/admin-dashboard/dashboard">ورود</NuxtLink>
     </div>
   </header>
 </template>

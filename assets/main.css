@@ -3,16 +3,19 @@
 @font-face {
     font-family: "YekanBakhFaNum-Regular";
     src: url('/public/fonts/woff/YekanBakhFaNum-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "YekanBakhFaNum-Bold";
     src: url('/public/fonts/woff/YekanBakhFaNum-Bold.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "YekanBakhFaNum-ExtraBold";
     src: url('/public/fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
+    font-display: swap;
 }
 
 @theme {

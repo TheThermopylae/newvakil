@@ -1,11 +1,34 @@
 <template>
-  <section class="bg-main p-4 rounded-2xl flex justify-between mb-4 gap-3">
-    <Button
-      icon="pi pi-bars"
-      @click="visibleRight = true"
-      pt:root="!rounded-full !size-[52px] !bg-white !border-none !text-black lg:!hidden"
-    />
+  <section
+    class="bg-main p-4 rounded-2xl md:flex justify-between items-center mb-4 gap-3"
+  >
+    <div class="flex items-center gap-3">
+      <Button
+        icon="pi pi-bars"
+        @click="visible = true"
+        pt:root="!rounded-full !size-[52px] !bg-white !border-none !text-black !hidden md:!flex lg:!hidden"
+      />
+      <div
+        class="flex gap-3 items-center mb-3 md:mb-0"
+        v-if="route.path.startsWith('/user-dashboard/')"
+      >
+        <img
+          src="/searchlawyer/law1.svg"
+          alt="avatar"
+          class="size-[52px] rounded-full"
+        />
+        <div>
+          <h4 class="text-xl font-yekB">سهیل رضایی</h4>
+          <p class="text-secondary-text text-sm">soheilrezdwadaaie@gmail.com</p>
+        </div>
+      </div>
+    </div>
     <div class="flex gap-3">
+      <Button
+        icon="pi pi-bars"
+        @click="visible = true"
+        pt:root="!rounded-full !size-[52px] !bg-white !border-none !text-black md:!hidden"
+      />
       <NuxtLink to="/" class="size-[52px] rounded-full flex-center bg-white"
         ><svg
           width="24"
@@ -59,18 +82,32 @@
         </svg>
       </div>
     </div>
-    <Drawer v-model:visible="visibleRight" position="right" pt:content="!p-0">
+    <Drawer
+      v-model:visible="visible"
+      position="right"
+      pt:content="!p-0 !h-screen !flex !flex-col !justify-between"
+      pt:header="!pl-4"
+    >
       <template #header>
         <NuxtLink to="/">
           <img src="/logo.svg" alt="logo" />
         </NuxtLink>
       </template>
-      <AdminPanelMenuLinks />
-      <AdminPanelOptionsLinks class="mt-10" />
+      <div v-if="route.path.startsWith('/admin-dashboard')">
+        <AdminPanelMenuLinks @changePage="visible = faslse" />
+        <AdminPanelOptionsLinks class="mt-10" />
+      </div>
+      <div v-else class="h-screen flex flex-col justify-between pb-3 gap-5">
+        <UserPanelMenuLinks />
+        <UserPanelOptionsLinks />
+        <UserPanelUpgradeSub />
+      </div>
     </Drawer>
   </section>
 </template>
 
 <script setup>
-let visibleRight = ref(false)
+let route = useRoute()
+
+let visible = ref(false)
 </script>

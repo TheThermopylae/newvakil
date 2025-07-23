@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  css: ['~/assets/main.css'],
+  css: ['~/assets/main.css', 'primeicons/primeicons.css'],
   vite: {
     plugins: [
       tailwindcss(),
